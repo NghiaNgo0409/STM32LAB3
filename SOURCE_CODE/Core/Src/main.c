@@ -26,6 +26,8 @@
 #include "button.h"
 #include "fsm_automatic.h"
 #include "fsm_manual.h"
+
+#include "input_reading.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -248,6 +250,9 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) {
 	getKeyInput(1);
 	getKeyInput(2);
 	getKeyInput(3);
+	if (htim->Instance == TIM2) {
+		button_reading();
+	}
 }
 /* USER CODE END 4 */
 
