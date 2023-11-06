@@ -1,0 +1,7 @@
+global.c:15:6:display7SEG	16	static
+global.c:110:6:update7SEG	16	static
+global.c:142:6:updateClockBuffer	4	static
+global.c:149:6:countDown	4	static
+global.c:154:6:setInitialValue	16	static
+global.c:159:6:setHorizontalLeds	24	static
+global.c:165:6:setVerticalLeds	24	static
